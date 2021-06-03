@@ -13,12 +13,13 @@ export default function AddTodo({submitHandler}){
             placeholder='new todo....'
             onChangeText={changeHandler}
         />
-        <Button onPress={()=>submitHandler(text)} title='ajout todo' color='coral'/>
+        <Button onPress={()=>submitHandler(text)} title='ajout todo' color='coral' />
     </View>
     )
 }
 const styles = StyleSheet.create({
 input: {
+    marginTop:2,
     marginBottom:10,
     marginHorizontal:8,
     marginVertical:6,
